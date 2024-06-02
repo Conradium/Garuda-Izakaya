@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Garuda Izakaya</title>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div>
+                        <!-- profile picture -->
+                        <img src="assets/img/logo_head.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Ethnic Culinary</span>
+                    <h1 class="nav__name">Garuda <br> Izakaya</h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home' ></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link"> <!--------ABOUT PAGE-->
+                            <i class='bx bx-user'></i> Menu
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Events <!--------PORTOFOLIO-->
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Contact Us<!--------contact PAGE-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        Garuda Izakaya
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle btn--jump" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!--=============== HOME ===============-->
+            
+            <section class="section section__height_logo container_logo parallax-container parallax-image active" id="home">
+                <div id="reminderContainer">
+                    <div id="reminderHeader">
+                        <span>[i] Information</span>
+                    </div>
+                    <div id="reminderContent">
+                        <div id="reminderContentText">You can press the menu button on the top right.
+                        </div>
+                    </div>
+                </div>
+                <div class="concept-quote">
+                    <h1>Concept</h1>
+                    <blockquote>
+                        <p>We serve authentic ethnic cuisine in an izakaya style, not an ethnic-style izakaya. We offer about 50 different kinds of dishes in small portions at a reasonable price.</p>
+                      </blockquote>
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" class="logo_image"/>
+                        <div class="chevron-down">
+                        <i class='bx bx-chevron-down'></i>
+                        </div>
+                </div>
+              </section>
+
+              <section class="section section__height container" id="reviews">
+                <h1>Reviews</h1>
+                <div class="card">
+                    <div class="review card-content">
+                      <div class="review-header">
+                        <div class="review-rating">★★★★★
+                  </div>
+                        <div class="review-summary card-title">One in a Million</div>
+                        <div class="review-user" data-user-id="1"><a href="">johnDoe</a></div> 
+                        
+                  <div class="user-data card">
+                    <div class="card-content">
+                      <div class="profile">
+                        <img src="assets/img/user.png"/>
+                        <div class="card-title profile-username">johnDoe
+                          <div><a href="">2 reviews</a></div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                    
+                        <div class="review-date">on Dec. 17, 2023</div>
+                      </div>
+                      <div class="review-content">
+                        Had an excellent dinner with family. The winter special menu is very recommended.
+                        <br><br>
+                        The staff are nice to us, and my kids definitely love the vibe of this place. 10/10 would come again.
+                      </div>
+                    </div>
+                  </div>            
+                  <div class="card">
+                    <div class="review card-content">
+                      <div class="review-header">
+                        <div class="review-rating">★★★★
+                  </div>
+                        <div class="review-summary card-title">Recommended</div>
+                        <div class="review-user" data-user-id="2"><a href="">doeJane</a></div> 
+                        
+                  <div class="user-data card">
+                    <div class="card-content">
+                      <div class="profile">
+                        <img src="assets/img/user.png"/>
+                        <div class="card-title profile-username">doeJane
+                          <div><a href="">24 reviews</a></div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                    
+                        <div class="review-date">on Jan. 17, 2024</div>
+                      </div>
+                      <div class="review-content">
+                        As a traveller who likes to travel to find cuisine, I did not expect to have an ethnic meal over at Japan!
+                        <br><br>
+                        I have ate some of the food in their original places, and I would say the chef really did his job well. It tastes like the actual ethnic food. Well done!
+                      </div>
+                    </div>
+                  </div>   
+                    
+              </section>
+              
+            <!--=============== ABOUT ===============-->
+            <section class="section section__height container" id="about">
+                <!-- <h1>Gallery</h1> -->
+                <div class="container">              
+                  <div class="gallery-wrap">
+                    <div class="item item-1"></div>
+                    <div class="item item-2"></div>
+                    <div class="item item-3"></div>
+                    <!-- <div class="item item-4"></div>
+                    <div class="item item-5"></div> -->
+                  </div>
+                </div>
+                
+                <marquee behavior="scroll" direction="right">Don't forget to check out our events at Garuda Izakaya! Exciting events and special offers await you!        |        From all you can drinks, to unique ethnic-style food!        |        Reservation available! Contact us for more information.</marquee>
+
+              
+              </section>
+
+
+
+
+
+
+            <div class="footer">Copyright <strong>@Garuda Izakaya 2024</strong>.</div>
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

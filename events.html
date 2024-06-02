@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Garuda Izakaya</title>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div>
+                        <!-- profile picture -->
+                        <img src="assets/img/logo_head.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Ethnic Culinary</span>
+                    <h1 class="nav__name">Garuda <br> Izakaya</h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">
+                            <i class='bx bx-home' ></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link"> <!--------ABOUT PAGE-->
+                            <i class='bx bx-user'></i> Menu
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#events" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Events <!--------PORTOFOLIO-->
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Contact Us<!--------contact PAGE-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        Garuda Izakaya | Events
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle btn--jump" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+
+
+        
+            <!--=============== HOME ===============-->
+            <section class="section__height_events events-container active" id="events">
+                
+<div class="event_section">
+<!--RESET BUTTON -->
+<div id="reset_search">
+    <p class="red-btn white-text"> <!-- YOU CAN CHANGE THE COLOR IF YOU WANT, JUST CHANGE THE red-btn TO OTHER COLORS-->
+        Reset search
+    </p>
+</div>
+<!--START OF FILTER SYSTEM-->
+<section>
+    <!--MONTHS-->
+    <select class="combine" id="month" name="filter">
+    <option value="">All months</option>
+    <option value="March">March</option>
+    <option value="December-February">December-February</option>
+    <option value="July-August">July-August</option>
+    </select>
+    <!--SECTOR-->
+    <select class="combine" id="sector" name="filter">
+    <option value="">Recent</option>
+    <option value="upcoming">Upcoming</option>
+    </select>
+    <!-- END OF FILTER SYSTEM -->
+</section>
+<br/>
+<!-- tiles -->
+
+<section class="tile_wrapper">
+    <!-- January events -->
+    <div class="event" data-month="March" data-sector="Recent">
+        <h4 class="festivalDate">
+            March
+        </h4>
+        <p class="festivalName">
+            <span style="color: #7A0002;">Holi</span>
+            <br />
+            Celebrate the vibrant spirit of Holi with our exclusive <b>Holi Theme Cocktail Special</b>, a limited-time offering that promises to add a splash of color to your festivities.
+        </p>
+        <a class="showModal" href="#holicocktail" ><span>.</span></a>
+    </div>
+    <div class="event" data-month="December-February" data-sector="Recent">
+        <h4>
+            December - February
+        </h4>
+        <p>
+            <span style="color: #7A0002;">Winter Special</span>
+            <br />
+            We’re excited to introduce a heartwarming tradition to your winter dining experience. Gather your loved ones around a steaming pot of our hearty <b>chicken broth nabe</b>, a culinary delight that promises to warm both body and soul. 
+        </p>
+        <a class="showModal" href="#chickenbrothnabe" ><span>.</span></a>
+    </div>
+    <div class="event" data-month="July-August" data-sector="upcoming">
+        <h4>
+            July - August
+        </h4>
+        <p>
+            <span style="color: #7A0002;">Summer</span>
+            <br />
+          For a limited time, we proudly present our summer special <b>Unagi</b> Don dishes expertly crafted to tantalize your taste buds. Unagi, or freshwater eel, is renowned for its rich, succulent flavor and delicate texture, making it the perfect culinary choice for the summer months
+        </p>
+        <a href="#unagidon" class="showModal"><span>.</span></a>
+    </div>
+</section>
+<!-- end of tiles -->
+
+<!-- no event -->
+
+<section class="modal" id="no_event">
+    <div class="modalWrapper">
+        <div class="modalContent">
+            <div class="closeModal">
+            </div>
+            <div class="modalBox noBackground">
+                <div class="modalInfo">
+                    <img src="https://www.businessdirect.bt.com/Images/vendors/PROJECTS/BTBD/DSGN-385696-Events-Calendar/no-matches.png" />
+                    <div class="modalInfoCopy">
+                        <h4 class="white-text" style="text-align: center;">
+                            No events match your search, please try again!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end of no event -->
+
+
+<section class="modal" id="holicocktail">
+    <div class="modalWrapper">
+        <div class="modalContent">
+            <div class="closeModal">
+            </div>
+            <div class="modalBox">
+                <div class="modalInfo">
+                    <img src="assets/img/holi.jpg" />
+                    <div class="modalInfoCopy">
+                        <b>Holi Specials</b>
+                        <br />
+                        <br />
+                        Celebrate the vibrant spirit of Holi with our exclusive Holi Theme Cocktail Special, a limited-time offering that promises to add a splash of color to your festivities 
+
+                        <br />
+                        <br />
+                        Blending tradition with innovation as we introduce a handcrafted cocktail inspired by the joyful hues of Holi. from the bright red and oranges of the sunrise to the deep blues and purple of the night sky. Sip on refreshing concoctions infused with exotic fruits, aromatic spices, and premium spirits, all coming together to create a symphony of flavors that dance on your palate.
+                      <br />
+                      <b>24 - 25 March, 2024</b>
+                    </div>
+                  <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="modal" id="chickenbrothnabe">
+    <div class="modalWrapper">
+        <div class="modalContent">
+            <div class="closeModal">
+            </div>
+            <div class="modalBox">
+                <div class="modalInfo">
+                    <img src="assets/img/nabe.png" />
+                    <div class="modalInfoCopy">
+                        <b>Winter Specials</b>
+                        <br />
+                        <br />
+                        We’re excited to introduce a heartwarming tradition to your winter dining experience. Gather your loved ones around a steaming pot of our hearty chicken broth nabe, a culinary delight that promises to warm both body and soul.
+                        <br />
+                        <br />
+                        Imagine a large pot bubbling with savory chicken broth, brimming with tender slices of chicken, fresh vegetables, and silky tofu, all simmering together to perfection. 
+                      <br />
+                      Gather your family and friends around the table and dive into this communal feast, where every spoonful is a celebration of togetherness and love.
+                      <br />
+                      <b> Event highlights: exclusively available from 1 December, 2023 to 28 February, 2024 </b>
+
+                    </div>
+                  <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="modal" id="unagidon">
+    <div class="modalWrapper">
+        <div class="modalContent">
+            <div class="closeModal">
+            </div>
+            <div class="modalBox">
+                <div class="modalInfo">
+                    <img src="assets/img/unagidon.jpg" />
+                    <div class="modalInfoCopy">
+                        <b>Summer Specials</b>
+                        <br />
+                        <br />
+                        For a limited time, we proudly present our summer special Unagi Don dishes expertly crafted to tantalize your taste buds. Unagi, or freshwater eel, is renowned for its rich, succulent flavor and delicate texture, making it the perfect culinary choice for the summer months. 
+
+                        <br />
+                        <br />
+                        Our dish is complemented with seasonal vegetables, adding a burst of freshness and texture to every mouthful. Finished with a sprinkle of fragrant sesame seeds and crispy nori, our Unagi Don is as visually stunning as it is delicious. 
+                      <br />
+                      <b>Event highlights: Exclusively available from 1 July - 31 August, 2024</b>
+
+
+                    </div>
+                  <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+              </section>
+
+            <!--=============== ABOUT ===============-->
+
+
+
+
+
+
+            <div class="footer">Copyright <strong>@Garuda Izakaya 2024</strong>.</div>
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/events.js"></script>
+    </body>
+</html>
