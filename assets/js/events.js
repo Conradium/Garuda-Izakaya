@@ -90,14 +90,14 @@ $('.showModal').on('click',function(){
     return false;
 });	
 
-$('.closeModal').on('click',function(){
-    $('.modal').removeClass('active');
-    $('.event').show();
-    $('.month').show();
-    $('.combine').each(function(e){
-            $(this).val('');
-        });
-});
+// $('.closeModal').on('click',function(){
+//     $('.modal').removeClass('active');
+//     $('.event').show();
+//     $('.month').show();
+//     $('.combine').each(function(e){
+//             $(this).val('');
+//         });
+// });
 
 /* ====================
 =======================
@@ -106,3 +106,14 @@ $('.closeModal').on('click',function(){
 
 
 });
+
+$('.modal').on('click', function(event) {
+    if ($(event.target).is($(this)) || $(event.target).parents('.modalContent').length === 0) {
+      $(this).removeClass('active');
+      $('.event').show();
+      $('.month').show();
+      $('.combine').each(function(e){
+        $(this).val('');
+      });
+    }
+  });

@@ -85,20 +85,20 @@ window.addEventListener('load', () => {
 });
 
 
-
+//Review Part
 $(".review-user").hover(function() {
-  var $this = $(this); // capture the current user element
-  var userId = $this.data('user-id'); // assuming you have a data attribute with the user ID
-  var $userData = $this.next('.user-data'); // capture the corresponding.user-data element
+  var $this = $(this); 
+  var userId = $this.data('user-id'); 
+  var $userData = $this.next('.user-data'); 
 
   $.get("/user/data/" + userId, function(userData) {
     // write user data to DOM
     $userData.find('.profile-username').text(userData.username);
     $userData.find('.profile-reviews').text(userData.reviews + 'eviews');
-    //...
   }); 
   
   $userData.show();
 }, function() {
   $(this).next('.user-data').hide();
 });
+

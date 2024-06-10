@@ -12,7 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/x-icon" href="assets/img/garuda.ico?">
+        <link rel="icon" type="image/x-icon" href="assets/img/garuda.ico">
 
         <title>Garuda Izakaya</title>
     </head>
@@ -64,18 +64,17 @@
         <!--=============== MAIN ===============-->
         <main class="main" id="main">
             <!--=============== HEADER ===============-->
-            <header class="header" id="header">
+            <header class="header_e" id="header">
                 <nav class="header__nav container">
-                    <a href="#" class="header__logo">
-                        Garuda Izakaya | Events
-                    </a>
-    
-                    <!-- Toggle button -->
-                    <div class="header__toggle btn--jump" id="header-toggle">
-                        <i class='bx bx-grid-alt'></i>
-                    </div>
+                  <div class="header__logo-container">
+                    <img src="assets/img/logo.png" class="header__logo"/>
+                    <a href="index.html" class="header__text">Events</a>
+                  </div>
+                  <div class="header__toggle btn--jump" id="header-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                  </div>
                 </nav>
-            </header>
+              </header>
 
 
         
@@ -151,8 +150,7 @@
 <section class="modal" id="no_event">
     <div class="modalWrapper">
         <div class="modalContent">
-            <div class="closeModal">
-            </div>
+            
             <div class="modalBox noBackground">
                 <div class="modalInfo">
                     <img src="https://www.businessdirect.bt.com/Images/vendors/PROJECTS/BTBD/DSGN-385696-Events-Calendar/no-matches.png" />
@@ -173,8 +171,7 @@
 <section class="modal" id="holicocktail">
     <div class="modalWrapper">
         <div class="modalContent">
-            <div class="closeModal">
-            </div>
+            
             <div class="modalBox">
                 <div class="modalInfo">
                     <img src="assets/img/holi.jpg" />
@@ -201,8 +198,7 @@
 <section class="modal" id="chickenbrothnabe">
     <div class="modalWrapper">
         <div class="modalContent">
-            <div class="closeModal">
-            </div>
+            
             <div class="modalBox">
                 <div class="modalInfo">
                     <img src="assets/img/nabe.png" />
@@ -232,8 +228,7 @@
 <section class="modal" id="unagidon">
     <div class="modalWrapper">
         <div class="modalContent">
-            <div class="closeModal">
-            </div>
+            
             <div class="modalBox">
                 <div class="modalInfo">
                     <img src="assets/img/unagidon.jpg" />
@@ -260,7 +255,34 @@
 </div>
               </section>
 
-            <div class="footer">Copyright <strong>@Garuda Izakaya 2024</strong>.</div>
+            <!--=============== ABOUT ===============-->
+
+
+
+
+
+
+            <div class="footer">
+                <div class="sociallinks">
+                    <ul>
+                      <li>
+                        <a class="facebook" href="https://www.facebook.com/garuda.izakaya.9/" target="_blank">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="instagram" href="https://www.instagram.com/garudaizakaya/?utm_source=ig_embed&hl=en" target="_blank">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <!-- Add more social links here -->
+                    </ul>
+                  </div>
+                Copyright <strong>@Garuda Izakaya 2024</strong>.
+                <a href="https://tabelog.com/tokyo/A1316/A131603/13203222/" target="_blank">
+                <img src="assets/img/banner_tabelog.png" alt="Tabelog Footer" class="footer-image">
+                </a>
+            </div>
         </main>
         
 
