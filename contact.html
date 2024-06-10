@@ -1,138 +1,125 @@
+<!-- DEAR PROFESSOR, IF YOU ARE READING THIS, I AM SORRY, THIS CODE HAS A LOT OF TRASH CODES THAT DOESNT MAKE IT TO THE FINAL -->
+<!-- DRAFT. FOR YOUR CONVENIENCE, ALL OF THE CODES HAVE BEEN BEAUTIFIED FOR EASY READING. ALSO HALFWAY OF DOING THIS, I JUST -->
+<!-- REALIZED THAT IMG SOURCES THAT ARE PUT INSIDE CSS FILES CANNOT BE ON TOP OF THE DIRECTORY OF THE CSS FILE. -->
+<!-- I WILL USE A BETTER HABIT NEXT TIME. 22229515 BENEDICTUS SEBASTIAN AP "CONRADIUM"-->
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <script src="https://kit.fontawesome.com/a1fc68cf75.js" crossorigin="anonymous"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tokyo Ethnic Culinary Izakaya">
-        <meta name="keywords" content="Tokyo,Ethnic,Culinary,Izakaya,Garuda Izakaya,Ethnic Izakaya">
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="icon" type="image/x-icon" href="assets/img/garuda.ico">
-
-        <title>Garuda Izakaya</title>
-    </head>
-    <body>
-        <!--=============== NAV ===============-->
-        <nav class="nav" id="nav">
-            <div class="nav__menu container" id="nav-menu">
-                <div class="nav__shape"></div>
-
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-                
-                <div class="nav__data">
-                    <div>
-                        <!-- profile picture -->
-                        <img src="assets/img/logo_head.png" alt="" class="nav__img">
-                    </div>
-
-                    <span class="nav__greeting">Ethnic Culinary</span>
-                    <h1 class="nav__name">Garuda <br> Izakaya</h1>
-                </div>
-
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">
-                            <i class='bx bx-home' ></i> Home 
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="menu.html" class="nav__link"> <!--------ABOUT PAGE-->
-                            <i class='bx bx-user'></i> Menu
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="events.html" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i> Events <!--------PORTOFOLIO-->
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-message-square-detail'></i> Contact Us<!--------contact PAGE-->
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a1fc68cf75.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tokyo Ethnic Culinary Izakaya">
+    <meta name="keywords" content="Tokyo,Ethnic,Culinary,Izakaya,Garuda Izakaya,Ethnic Izakaya">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/garuda.ico">
+    <title>Garuda Izakaya</title>
+  </head>
+  <body>
+    <!--=============== NAV ===============-->
+    <nav class="nav" id="nav">
+      <div class="nav__menu container" id="nav-menu">
+        <div class="nav__shape"></div>
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+        <div class="nav__data">
+          <div>
+            <img src="assets/img/logo_head.png" alt="" class="nav__img">
+          </div>
+          <span class="nav__greeting">Ethnic Culinary</span>
+          <h1 class="nav__name">Garuda <br> Izakaya </h1>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class='bx bx-home'></i> Home </a>
+          </li>
+          <li class="nav__item">
+            <a href="menu.html" class="nav__link">
+              <i class='bx bx-list-ul'></i> Menu </a>
+          </li>
+          <li class="nav__item">
+            <a href="events.html" class="nav__link">
+              <i class='bx bx-calendar-event'></i> Events </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link active-link">
+              <i class='bx bxs-contact'></i> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--=============== MAIN ===============-->
+    <main class="main" id="main">
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+        <nav class="header__nav container">
+          <div class="header__logo-container">
+            <a href="index.html" class="header__link">
+              <img src="assets/img/logo.png" class="header__logo">
+              <span class="header__text">Contact Us</span>
+            </a>
+          </div>
+          <div class="header__toggle btn--jump" id="header-toggle">
+            <i class='bx bx-grid-alt'></i>
+          </div>
         </nav>
-
-        <!--=============== MAIN ===============-->
-        <main class="main" id="main">
-            <!--=============== HEADER ===============-->
-            <header class="header" id="header">
-                <nav class="header__nav container">
-                  <div class="header__logo-container">
-                    <img src="assets/img/logo.png" class="header__logo"/>
-                    <a href="index.html" class="header__text">Contact Us</a>
-                  </div>
-                  <div class="header__toggle btn--jump" id="header-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                  </div>
-                </nav>
-              </header>
-
-
-            
-            <!--=============== HOME ===============-->
-            <section class="section__height__contact contact-container active" id="contact">
-                <div class="contactform">
-                  <div class="contactus">
-                    <h1>CONTACT US</h1>
-                  </div>
-                  <div class="map-and-form">  <!-- Changed from Form to Restaurant info instead-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202.6965347968331!2d139.7231931339782!3d35.6241626638129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8c098cbe03%3A0x95b552a1cfa90348!2z56ys77yS5p2x5qCE44OT44Or!5e0!3m2!1sen!2sus!4v1717228884199!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="restaurant-info">
-                        <h2>Garuda Izakaya</h2>
-                            <p class="address">ガルーダ エスニック居酒屋
-                            〒141-0031 東京都品川区西五反田1-17-1
-                            第2東栄ビル 302</p>
-                        <div class="telfax">
-                        <p><strong>Tel.</strong> 03-6417-0107</p>
-                        <p><strong>Fax.</strong> 03-6417-0108</p>
-                        </div>
-                        <strong>Hours of Operation</strong>
-                        <p>Lunch 11:45 - 16:00</p>
-                        <p>Dinner 17:30 - 5:00 </p>                       </p>
-                      </div>
-                  </div>
-                </div>
-              </section>
-
-
-
-
-
-
-
-              <div class="footer">
-                <div class="sociallinks">
-                    <ul>
-                      <li>
-                        <a class="facebook" href="https://www.facebook.com/garuda.izakaya.9/" target="_blank">
-                          <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="instagram" href="https://www.instagram.com/garudaizakaya/?utm_source=ig_embed&hl=en" target="_blank">
-                          <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <!-- Add more social links here -->
-                    </ul>
-                  </div>
-                Copyright <strong>@Garuda Izakaya 2024</strong>.
-                <a href="https://tabelog.com/tokyo/A1316/A131603/13203222/" target="_blank">
-                <img src="assets/img/banner_tabelog.png" alt="Tabelog Footer" class="footer-image">
-                </a>
+      </header>
+      <!--=============== HOME ===============-->
+      <section class="section__height__contact contact-container active" id="contact">
+        <div class="contactform">
+          <div class="contactus">
+            <h1>CONTACT US</h1>
+          </div>
+          <div class="map-and-form">
+            <!-- Changed from Form to Restaurant info instead-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202.6965347968331!2d139.7231931339782!3d35.6241626638129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8c098cbe03%3A0x95b552a1cfa90348!2z56ys77yS5p2x5qCE44OT44Or!5e0!3m2!1sen!2sus!4v1717228884199!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="restaurant-info">
+              <h2>Garuda Izakaya</h2>
+              <p class="address">ガルーダ エスニック居酒屋 <br />
+                <br /> 〒141-0031 東京都品川区西五反田 <br /> 1-17-1 第2東栄ビル 302
+              </p>
+              <div class="telfax">
+                <p>
+                  <strong>Tel.</strong> 03-6417-0107
+                </p>
+                <p>
+                  <strong>Fax.</strong> 03-6417-0108
+                </p>
+              </div>
+              <strong>Hours of Operation</strong>
+              <p>Lunch 11:45 - 16:00</p>
+              <p>Dinner 17:30 - 5:00 </p>
+              </p>
             </div>
-        </main>
-        
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="sociallinks">
+          <ul>
+            <li>
+              <a class="facebook" href="https://www.facebook.com/garuda.izakaya.9/" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="https://www.instagram.com/garudaizakaya/?utm_source=ig_embed&hl=en" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <!-- Add more social links here -->
+          </ul>
+        </div> Copyright <strong>@Garuda Izakaya 2024</strong>. <a href="https://tabelog.com/tokyo/A1316/A131603/13203222/" target="_blank">
+          <img src="assets/img/banner_tabelog.png" alt="Tabelog Footer" class="footer-image">
+        </a>
+      </div>
+    </main>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
